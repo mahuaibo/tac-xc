@@ -2,16 +2,19 @@
 
 ## Contract Address.
 
-TAC Token Account Address
+Contract Sender Account Address.
+> 0xa36dd3f5845efc67c4cde8feaf13720bdf9079b8
+
+TAC Token Account Address.
 > 0x43574f29ddc814906b69c49c5b80fba6d7694c0f
 
-XCPlugin Account Address
+XCPlugin Account Address.
 > 0x92d6dcdf36fa6c7ba218c75531e55768621e1cb6
 
-XC Account Address
+XC Account Address.
 > 0xde534956e14cbab6d6aeb04168c9713f38107aea
 
-## Contract ABI
+## Contract ABI. 100000000000000
 
 [TAC Token Account ABI](./ethereum/contracts/abi/TAC.abi)
 ```
@@ -27,7 +30,17 @@ XC Account Address
 ```
 [{"constant":false,"inputs":[{"name":"account","type":"address"}],"name":"setToken","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getToken","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"toAccount","type":"address"},{"name":"value","type":"uint256"}],"name":"lock","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"status","type":"uint8"}],"name":"setStatus","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getXCPlugin","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getStatus","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getAdmin","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"account","type":"address"}],"name":"setAdmin","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"account","type":"address"}],"name":"setXCPlugin","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"txid","type":"string"},{"name":"fromAccount","type":"address"},{"name":"toAccount","type":"address"},{"name":"value","type":"uint256"}],"name":"unlock","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getPlatformName","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"lockBalance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"account","type":"address"},{"name":"value","type":"uint256"}],"name":"withdraw","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":false,"name":"toPlatform","type":"bytes32"},{"indexed":false,"name":"toAccount","type":"address"},{"indexed":false,"name":"value","type":"bytes32"},{"indexed":false,"name":"tokenSymbol","type":"bytes32"}],"name":"Lock","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txid","type":"string"},{"indexed":false,"name":"fromPlatform","type":"bytes32"},{"indexed":false,"name":"fromAccount","type":"address"},{"indexed":false,"name":"value","type":"bytes32"},{"indexed":false,"name":"tokenSymbol","type":"bytes32"}],"name":"Unlock","type":"event"}]
 ```
+## Gaslimit.
 
+Contract | Function | Gaslimit
+- | :-: | -:
+TAC token | constructor | 600000
+TAC token | approve | 46000
+XCPlugin | constructor | 2200000
+XCPlugin | voteProposal | 150000(首次250000)
+XC | constructor | 1200000
+XC | lock | 82000
+XC | unlock | 118000
 
 
 
