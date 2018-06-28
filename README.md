@@ -33,7 +33,7 @@ XC Account Address.
 ## Gaslimit.
 
 | Contract | Function | Gaslimit |
-| - | :-: | -:
+| - | :-: | -: |
 | TAC token | constructor | 600000 |
 | TAC token | approve | 46000 |
 | XCPlugin | constructor | 2200000 |
