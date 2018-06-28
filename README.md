@@ -37,7 +37,7 @@ XC Account Address.
 | TAC token | constructor | 600000 |
 | TAC token | approve | 46000 |
 | XCPlugin | constructor | 2200000 |
-| XCPlugin | voteProposal | 150000(首次250000) |
+| XCPlugin | voteProposal | 150000(*first time 250000) |
 | XC | constructor | 1200000 |
 | XC | lock | 82000 |
 | XC | unlock | 118000 |
