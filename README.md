@@ -14,7 +14,7 @@ XCPlugin Account Address.
 XC Account Address.
 > 0xde534956e14cbab6d6aeb04168c9713f38107aea
 
-## Contract ABI. 100000000000000
+## Contract ABI.
 
 [TAC Token Account ABI](./ethereum/contracts/abi/TAC.abi)
 ```
